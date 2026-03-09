@@ -1,6 +1,19 @@
 import { Zap } from 'lucide-react';
 
 export default function App() {
+  const whatsappMessage = `Hallo VAMELA-Team! 👋
+
+Ich habe gerade gebucht und freue mich auf den Start.
+
+*Meine Digistore24 E-Mail:* 
+[Bitte hier eintragen]
+
+*Grobe Infos zu meiner neuen Website (Branche, Ziele, Wünsche):*
+[Bitte hier eintragen]
+
+Liebe Grüße!`;
+  const whatsappUrl = `https://wa.me/4917624200179?text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <div className="relative h-[100dvh] w-full flex flex-col items-center justify-center overflow-hidden">
       {/* Video Background (Layer 0) */}
@@ -97,7 +110,7 @@ export default function App() {
               </p>
               
               <a 
-                href="https://wa.me/017624200179" 
+                href={whatsappUrl}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full bg-[#25D366] text-white font-bold text-sm md:text-lg py-3 md:py-4 px-4 md:px-6 rounded-lg md:rounded-xl flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300 shadow-lg shadow-[#25D366]/30"
